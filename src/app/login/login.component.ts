@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
   }
 
  login() {
-    this.keycloackService.keycloak.login();
+    this.keycloackService.keycloak.login({redirectUri:'http://localhost:4200/#/dashboard/'});
   }
 
    logout() {
